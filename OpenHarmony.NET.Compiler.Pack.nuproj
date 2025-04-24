@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.Build.NoTargets">
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <PackageId>OpenHarmony.NET.Compiler.Pack</PackageId>
+    <Version>1.0</Version>
+    <Authors>OpenHarmony.NET</Authors>
+    <Company>OpenHarmony.NET</Company>
+    <Description>MSBuild targets to aid in crosscompiling Native AOT publishing.</Description>
+    <PackageProjectUrl>https://github.com/OpenHarmony.NET/OpenHarmony.NET.Compiler.Pack</PackageProjectUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="OpenHarmony.NET.PublishAotCross" Version="0.0.0-alpha.2" />
+    <PackageReference Include="OpenHarmony.NET.Runtime" Version="0.0.0-alpha.19" />
+    <PackageReference Include="PublishAotCross.Compiler" Version="0.0.0-alpha.27" />
+  </ItemGroup>
+</Project>

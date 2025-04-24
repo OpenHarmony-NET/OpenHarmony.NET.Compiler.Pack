@@ -19,7 +19,7 @@ jobs:
     - name: Install .NET
       uses: actions/setup-dotnet@v4
       with:
-        dotnet-version: '8.0.x'
+        dotnet-version: '9.0.x'
 
     - name: pack nugets
       run: dotnet build -t:Pack OpenHarmony.NET.Compiler.Pack.nuproj -o ./packages -p:Version=0.0.0-alpha.${{github.run_number}} --property PackageCompressionLevel=Optimal

@@ -10,12 +10,14 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <Dependencies>OpenHarmony.NET.PublishAotCross:0.0.0-alpha.2</Dependencies>
+    <Dependencies>
+      OpenHarmony.NET.PublishAotCross:0.0.0-alpha.2;
+      OpenHarmony.NET.Runtime:0.0.0-alpha.19;
+      PublishAotCross.Compiler:0.0.0-alpha.27
+    </Dependencies>
   </PropertyGroup>
-  <PropertyGroup>
-    <Dependencies>OpenHarmony.NET.Runtime:0.0.0-alpha.19</Dependencies>
-  </PropertyGroup>
-  <PropertyGroup>
-    <Dependencies>PublishAotCross.Compiler:0.0.0-alpha.27</Dependencies>
-  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="" />
+  </ItemGroup>
 </Project>

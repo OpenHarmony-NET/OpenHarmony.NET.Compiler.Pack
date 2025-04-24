@@ -1,1 +1,1 @@
-# HarmonyOS.Compiler.Pack
+# OpenHarmony.NET.Compiler.Pack

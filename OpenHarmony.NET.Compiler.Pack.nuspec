@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>OpenHarmony.NET.Compiler.Pack</id>
+    <version>1.0.0</version>
+    <authors>OpenHarmony.NET</authors>
+    <projectUrl>https://github.com/OpenHarmony.NET/OpenHarmony.NET.Compiler.Pack</projectUrl>
+    <description>MSBuild targets to aid in crosscompiling Native AOT publishing.</description>
+    <dependencies>
+      <group targetFramework="net9.0">
+        <dependency id="OpenHarmony.NET.PublishAotCross" version="0.0.0-alpha.2"/>
+        <dependency id="OpenHarmony.NET.Runtime" version="0.0.0-alpha.19"/>
+        <dependency id="PublishAotCross.Compiler" version="0.0.0-alpha.27"/>
+      </group>
+    </dependencies>
+  </metadata>
+</package>

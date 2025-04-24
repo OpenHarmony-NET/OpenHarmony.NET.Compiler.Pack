@@ -9,9 +9,13 @@
     <PackageProjectUrl>https://github.com/OpenHarmony.NET/OpenHarmony.NET.Compiler.Pack</PackageProjectUrl>
   </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="OpenHarmony.NET.PublishAotCross" Version="0.0.0-alpha.2" />
-    <PackageReference Include="OpenHarmony.NET.Runtime" Version="0.0.0-alpha.19" />
-    <PackageReference Include="PublishAotCross.Compiler" Version="0.0.0-alpha.27" />
-  </ItemGroup>
+  <PropertyGroup>
+    <Dependencies>OpenHarmony.NET.PublishAotCross:0.0.0-alpha.2</Dependencies>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Dependencies>OpenHarmony.NET.Runtime:0.0.0-alpha.19</Dependencies>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Dependencies>PublishAotCross.Compiler:0.0.0-alpha.27</Dependencies>
+  </PropertyGroup>
 </Project>

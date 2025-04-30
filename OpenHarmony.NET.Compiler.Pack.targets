@@ -1,0 +1,18 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+		<HostRuntimeIdentifier Condition="$([MSBuild]::IsOSPlatform('Windows')) and $([System.Runtime.InteropServices.RuntimeInformation]::OSArchitecture) == 'x64'">win-x64</HostRuntimeIdentifier>
+		<HostRuntimeIdentifier Condition="$([MSBuild]::IsOSPlatform('Windows')) and $([System.Runtime.InteropServices.RuntimeInformation]::OSArchitecture)== 'arm64'">win-arm64</HostRuntimeIdentifier>
+
+		<HostRuntimeIdentifier Condition="$([MSBuild]::IsOSPlatform('Linux')) and $([System.Runtime.InteropServices.RuntimeInformation]::OSArchitecture)== 'x64'">linux-x64</HostRuntimeIdentifier>
+		<HostRuntimeIdentifier Condition="$([MSBuild]::IsOSPlatform('Linux')) and $([System.Runtime.InteropServices.RuntimeInformation]::OSArchitecture)== 'arm64'">linux-arm64</HostRuntimeIdentifier>
+
+		<HostRuntimeIdentifier Condition="$([MSBuild]::IsOSPlatform('macOS')) and $([System.Runtime.InteropServices.RuntimeInformation]::OSArchitecture)== 'x64'">osx-x64</HostRuntimeIdentifier>
+		<HostRuntimeIdentifier Condition="$([MSBuild]::IsOSPlatform('macOS')) and $([System.Runtime.InteropServices.RuntimeInformation]::OSArchitecture)== 'arm64'">osx-arm64</HostRuntimeIdentifier>
+	</PropertyGroup>
+	
+	<ItemGroup>
+		<PackageReference Condition="$(HostRuntimeIdentifier) == 'win-x64'" Include="PublishAotCross.Compiler.win-x64" Version="0.0.0-alpha.34"/>
+		<PackageReference Condition="$(HostRuntimeIdentifier) == 'linux-x64'" Include="PublishAotCross.Compiler.linux-x64" Version="0.0.0-alpha.34"/>
+	</ItemGroup>
+
+</Project>

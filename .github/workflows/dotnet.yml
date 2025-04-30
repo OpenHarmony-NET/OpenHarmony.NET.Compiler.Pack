@@ -32,7 +32,7 @@ jobs:
         sudo apt install mono-complete
         mono --version
     - name: Pack Blazonia nugets
-      run: nuget pack ./OpenHarmony.NET.Compiler.Pack.nuspec -OutputDirectory ./packages -Version 0.0.0-alpha.${{github.run_number}}
+      run: nuget pack ./OpenHarmony.NET.SDK.nuspec -OutputDirectory ./packages -Version 0.0.0-alpha.${{github.run_number}}
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v4
       with:
